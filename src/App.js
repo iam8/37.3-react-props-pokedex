@@ -11,9 +11,7 @@ function App({pokemon}) {
         <div className="App">
             <h2 className="App-heading">Pokedex</h2>
 
-            <div className="App-deck">
-                <Pokedex cards={pokemon}/>
-            </div>
+            <Pokedex cards={pokemon}/>
         </div>
     )
 }
