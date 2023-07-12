@@ -4,26 +4,14 @@
 
 .Pokecard {
     background-color: lightgrey;
-    width: 22%;
+    border-radius: 12px;
+    width: 15%;
     text-align: center;
     padding: 15px;
-    margin: 5px;
+    margin: 20px;
 }
 
 .Pokecard-name {
     color: blue;
-    background-color: lightblue;
     margin: 0px;
-}
-
-.Pokecard-img {
-    background-color: aquamarine;
-}
-
-.Pokecard-type {
-    background-color: pink;
-}
-
-.Pokecard-base-exp {
-    background-color: orange;
 }
