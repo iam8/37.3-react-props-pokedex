@@ -3,12 +3,13 @@
 
 import React from "react";
 import Pokedex from "./Pokedex";
+import "./App.css";
 
 
 function App({pokemon}) {
     return (
         <div className="App">
-            <h2>Pokedex</h2>
+            <h2 className="App-heading">Pokedex</h2>
             <Pokedex cards={pokemon}/>
         </div>
     )
