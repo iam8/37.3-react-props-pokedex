@@ -3,11 +3,12 @@
 
 import React from "react";
 import Pokecard from "./Pokecard";
+import "./Pokedex.css";
 
 
 function Pokedex({cards}) {
     return (
-        <>
+        <div className="Pokedex">
             {cards.map(card => (
                 <Pokecard
                     key={card.id}
@@ -16,7 +17,7 @@ function Pokedex({cards}) {
                     type={card.type}
                     baseExp={card.base_experience} />
             ))}
-        </>
+        </div>
     );
 }
 
