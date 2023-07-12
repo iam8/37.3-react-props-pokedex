@@ -6,7 +6,7 @@ import React from "react";
 
 function Pokecard(props) {
 
-    const {id, name, type, base_experience} = props;
+    const {id, name, type, baseExp} = props;
     const imgPath =
         `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`;
 
@@ -17,7 +17,7 @@ function Pokecard(props) {
             <h3>{name}</h3>
             <img src={imgPath} alt={imgAlt}></img>
             <div>Type: {type}</div>
-            <div>EXP: {base_experience}</div>
+            <div>EXP: {baseExp}</div>
         </div>
     );
 }
