@@ -2,6 +2,7 @@
 // 37.3 - React Props & Pokedex
 
 import React from "react";
+import "./Pokecard.css"
 
 
 function Pokecard(props) {
@@ -13,11 +14,13 @@ function Pokecard(props) {
     const imgAlt = `${name} Pokemon`;
 
     return (
-        <div>
-            <h3>{name}</h3>
-            <img src={imgPath} alt={imgAlt}></img>
-            <div>Type: {type}</div>
-            <div>EXP: {baseExp}</div>
+        <div className="Pokecard">
+
+            <h3 className="Pokecard-name">{name}</h3>
+            <img className="Pokecard-img" src={imgPath} alt={imgAlt}></img>
+            <div className="Pokecard-type" >Type: {type}</div>
+            <div className="Pokecard-base-exp" >EXP: {baseExp}</div>
+
         </div>
     );
 }
