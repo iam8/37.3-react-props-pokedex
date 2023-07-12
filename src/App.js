@@ -10,7 +10,10 @@ function App({pokemon}) {
     return (
         <div className="App">
             <h2 className="App-heading">Pokedex</h2>
-            <Pokedex cards={pokemon}/>
+
+            <div className="App-deck">
+                <Pokedex cards={pokemon}/>
+            </div>
         </div>
     )
 }
